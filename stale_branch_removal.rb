@@ -5,8 +5,7 @@ def invalid_branch?(branch_name)
 end
 
 def remove_branch(branch_name)
-  # %x(git branch -D branch_name)
-  puts branch_name
+  %x(git branch -D branch_name)
 end
 
 branches = `git branch -r`
